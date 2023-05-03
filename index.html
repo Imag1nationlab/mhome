@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Imagination" content="Tuan">
+    <meta name="description" content="this page is my everything">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imagination</title>
+    <link rel="icon" href="https://i.ibb.co/RG8G4tQ/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/icon/fontawesome-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/621e1e082d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="test.js"></script>
+
+</head>
+
+
+<body>
+    <div class="navbar">
+        <div class="dropdown-menu"> 
+            <button onclick="myFunctiondropmenu()" id="menu-button-id" class="menu-button-class">Menu</button>
+            <div class="menu-items-class" id="menu-items-id" > 
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="logo">
+            <img src="https://i.ibb.co/RG8G4tQ/logo.png" alt="" width="20px" height="20px">
+        </div>
+
+        <div class="search-box">
+            <button onclick="myFunctionsearchbox()" id="search-button-id" class="search-button-class">Search</button>
+            <div class="search-box-class" id="search-box-id">
+                <input type="text" id="" name="" placeholder="Looking for something?" 
+                    onfocus="this.value" required>
+            </div>
+        </div>
+    </div>   
+
+    
+<script>
+
+        function myFunctiondropmenu(){
+          document.getElementById("menu-items-id").classList.toggle("show");
+        }
+
+        window.addEventListener("click", function(event) {
+            if (!event.target.matches('.menu-button-class')) {
+         var dropdowns = document.getElementsByClassName("menu-items-class");
+        var i;
+            for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        })
+
+        function myFunctionsearchbox(){
+          document.getElementById("search-box-id").classList.toggle("popup");
+        }
+        window.addEventListener("click", function(event) {
+            if (!event.target.matches('.search-button-class')) {
+         var dropdowns = document.getElementsByClassName("search-box-class");
+        var i;
+            for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('popup')) {
+        openDropdown.classList.remove('popup');
+                    }
+                }
+            }
+        })
+        
+     
+</script>
+
+<!--------------------------------------------------------->
+<div class="slider">
+    <figure>
+      <img src="https://i.ibb.co/NL2ky2z/cat.png" alt="cat">
+      <img src="https://i.ibb.co/mNCj5pC/photography.png" alt="photography">
+      <img src="https://i.ibb.co/XVnjfG2/ui.png" alt="ui">
+      <img src="https://i.ibb.co/XypCSwW/videography.png" alt="videography">
+    </figure>
+  
+      <div class="hover-button">
+      <a href="https://imag1nationlab.github.io/portfolio/"><span>Portfolio</span></a>
+    </div>
+  </div>
+
+  <!-------------------------------------->
+
+
+<div class="contact">
+    <button onclick="functioncontact()" id="contact-button-id" class="contact-button-class">Contact</button>
+    <div id="contact-items-id" class="contact-items-class">
+        <a href="#">Email us</a>
+    </div>
+</div>
+    
+<script>
+          function functioncontact(){
+          document.getElementById("contact-items-id").classList.toggle("contact-show");
+        }
+
+        window.addEventListener("click", function(event) {
+            if (!event.target.matches('.contact-button-class')) {
+         var dropdowns = document.getElementsByClassName("contact-items-class");
+        var i;
+            for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('contact-show')) {
+        openDropdown.classList.remove('contact-show');
+                    }
+                }
+            }
+        })
+      
+</script>
+
+<div class="services">
+    <button onclick="functionservices()" id="services-button-id" class="services-button-class">Services</button>
+    <div id="services-items-id" class="services-items-class">
+        <ul>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">UI/UX</a></li>
+            <li><a href="#">Photography</a></li>
+        </ul>
+    </div>   
+</div>
+
+<script>
+    function functionservices(){
+    document.getElementById("services-items-id").classList.toggle("services-show");
+  }
+
+  window.addEventListener("click", function(event) {
+      if (!event.target.matches('.services-button-class')) {
+   var dropdowns = document.getElementsByClassName("services-items-class");
+  var i;
+      for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('services-show')) {
+  openDropdown.classList.remove('services-show');
+              }
+          }
+      }
+  })
+
+</script>
+
+    <div class="follow-us">
+        <button onclick="followusfuntion()" id="follow-us-button-id" class="follow-us-button-class">Follow us</button>
+        <div id="follow-us-items-id" class="follow-us-items-class">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+
+    <script>
+        function followusfuntion(){
+        document.getElementById("follow-us-items-id").classList.toggle("follow-us-show");
+      }
+    
+      window.addEventListener("click", function(event) {
+          if (!event.target.matches('.follow-us-button-class')) {
+       var dropdowns = document.getElementsByClassName("follow-us-items-class");
+      var i;
+          for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('follow-us-show')) {
+      openDropdown.classList.remove('follow-us-show');
+                  }
+              }
+          }
+      })
+    
+    </script>
+
+    <!---------------------------------------------->
+
+    <div class="rule">
+        <a href="#">Sitemap</a>
+        <a href="#">Legal & Privacy</a>
+        <a href="#">Cookies</a>
+    </div>
+    <!-------------------------------------->
+    <div class="language">
+        <select name="languages" id="languages-id" class="languages-class">   
+            <option value="english">English</option>
+            <option value="belgium">Belgium</option>
+        </select>
+    </div>    
+
+    <!---------------------------------->
+
+    <div class="copyright">
+        <h5>Imagination's Studio. All right reserved</h5>
+    </div>
+
+    
+
+</body>
+ 
