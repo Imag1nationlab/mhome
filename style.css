@@ -1,0 +1,386 @@
+*{
+  padding: 0;
+  margin: 0%;
+
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  font-family: 'Rosario', sans-serif;
+  width: 100%;
+}
+/*-------------------------------------*/
+
+.navbar-items{
+  background-color: orange;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+  
+
+}
+
+.sidenav a {
+  padding: 30px 30px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #414141;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #cfcfcf;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu-button{
+  display: flex;
+  margin: 10px 30px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 500;
+  padding: 0 10px;
+}
+
+.menu-button span{
+  margin: 16px 0;
+  cursor:pointer;
+  font-size: 30px;
+}
+.menu-button > h1{
+  font-family: myfont;
+  font-size: 50px;
+  margin: 3px 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.search{
+  position: relative;
+  display: inline-block;
+}
+.search-button{
+  margin: 24px 550px;
+  
+}
+.drop-button{
+  background-color: #3498db00;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;  
+
+}
+
+.search-board-class{
+  position: relative;
+  display: none;  
+}
+
+.search-items{
+  position: absolute;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  border-left: 50px solid rgba(128, 128, 128, 0);
+  border-right: 50px solid rgba(128, 128, 128, 0);
+  padding-bottom: 40px;
+  z-index: 9999;
+  margin: 0 -100px;
+}
+
+.menu-items-class{
+  width: 50%;
+  padding-top: 50px;
+  
+}
+.menu-items-class > h2{
+  padding-bottom: 18px;
+  color: black;
+  font-size: 17px;
+}
+.menu-items-class > a {
+  text-decoration: none;
+  font-size: 14px;
+  
+}
+.menu-items-class > a > p{
+  border-right: 1px solid rgba(128, 128, 128, 0.452);
+  padding-bottom: 15px;
+  color: black;
+
+}
+.menu-items-class > a > p:hover{
+  color: rgb(131, 130, 130);
+}
+
+
+.search-box-class{
+ border-left: 50px solid rgba(128, 128, 128, 0);
+ border-top: 100px solid rgba(0, 0, 0, 0);
+ margin: 10px 0px;
+}
+.search-box-class > input{
+  padding: 10px 0;
+  padding-right: 70px;
+  text-indent: 10px;
+ 
+}
+.search-box-class > i{
+ cursor: pointer;
+ margin-left: -30px;
+ 
+}
+
+.show {display: block;}
+
+@font-face {
+  font-family: myfont;
+  src: url(/font/snell-roundhand/SnellBT-Regular.otf);
+}
+
+/*****************************************************************/
+.slider{
+  margin: -100px 0;
+}
+
+
+
+/*************************************************************************/
+.info{
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  text-align: center;
+  padding: 30px 0;
+  width: 100%;
+  position: relative;
+  margin: 100px 0
+}
+.gp{
+  margin: 30px 0;
+}
+.gp > img{
+  border-radius: 5px;
+}
+.gp > h3{
+  margin: 15px 0;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+}
+
+.gp > button{
+  font-size: 13px;
+}
+
+.gp > button:hover{
+  background-color: rgb(218, 218, 218);
+}
+
+.uiux{
+  margin: 30px 0;
+}
+.uiux > img{
+  border-radius: 5px;
+}
+
+.uiux > h3{
+  margin: 15px 0;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+}
+
+.uiux > button{
+  font-size: 13px;
+}
+
+.uiux > button:hover{
+  background-color: rgb(218, 218, 218);
+}
+
+.photography{
+  margin: 30px 0;
+}
+.photography > img{
+  border-radius: 5px;
+}
+
+.photography > h3{
+  margin: 15px 0;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+}
+
+.photography button{
+  font-size: 13px;
+}
+.photography > button:hover{
+  background-color: rgb(218, 218, 218);
+}
+
+.readmore{
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+
+/**************************************************************************************/
+
+.stuff{
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 40%;
+  border-left: 100px solid rgba(0, 0, 0, 0);
+  border-right: 100px solid rgba(0, 0, 0, 0);
+  border-top: 50px solid rgba(0, 0, 0, 0);
+  border-bottom: 50px solid rgba(0, 0, 0, 0);
+  margin-top: -100px;
+  background-color: rgb(31, 31, 31);
+}
+.contact h4{
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: white;
+}
+.contact a{
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.service-items h4{
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: white;
+}
+.service-items a{
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.service-items ul li{
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+.follow-us h4{
+  padding-bottom: 15px;
+  font-size: 17px;
+  color: white;
+}
+.follow-us ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.follow-us ul li{
+  list-style-type: none;
+  padding-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+.company h4{
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: white;
+}
+
+.company ul li{
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+.company a{
+  text-decoration: none;
+  font-size: 15px;
+  padding-right: 10px;
+  color: rgb(255, 255, 255);
+}
+
+
+.newsletter h4{
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: white;
+}
+.newsletter p{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  word-wrap: break-word;
+  padding-bottom: 10px;
+}
+
+.newsletter i{
+  margin: 0 -30px;
+  cursor: pointer;
+  
+}
+.newsletter input{
+  text-indent: 10px;
+  outline: none;
+  padding: 5px 0;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.stuff a:hover{
+  color: rgb(214, 214, 214);
+}
+
+/***************************************************************************************/
+
+.language {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgb(31, 31, 31);
+}
+.language .languages{
+  border: 1px solid black;
+  border-radius: 3px;
+  outline: none;
+  font-size: 13px;
+  padding: 5px 5px;
+  
+}
+
+/******************************************************************************************/
+.copyright{
+  font-size: 13px;
+  width: 100%;
+}
+
+.copyright > h5{
+  font-size: 15px;
+  text-align: center;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  padding: 10px 0;
+}
+

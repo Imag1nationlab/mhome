@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Imagination" content="Tuan">
+    <meta name="description" content="this page is my everything">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imagination</title>
+    <link rel="icon" href="https://i.ibb.co/RG8G4tQ/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/icon/fontawesome-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/621e1e082d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="test.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="navbar">
+      <div class="navbar-items">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div class="menu-button">
+            <span style="" onclick="openNav()">&#9776;</span>
+            <h1>Imagination</h1>
+          </div>
+
+            <div class="search">
+              <div class="search-button">
+                  <button onclick="clickfunction()" class="drop-button"><i class="fa fa-search"></i></button>
+              </div>
+
+              <div class="search-board-class" id="search-board-id">
+                <div class="search-items">
+                  <div id="menu-items-id" class="menu-items-class">
+                    <h2>TRENDING</h2>
+                      <a href="#"><p>Graphic Design Trending</p></a>
+                      <a href="#"><p>UI Trending</p></a>
+                      <a href="#"><p>Photography Trending</p></a>
+                  </div>  
+
+                  <div class="search-box-class">
+                    <input type="text" placeholder="Looking for something?">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      <div class="slider" style="max-width:100%;">
+        <img class="sliding" src="https://i.ibb.co/NL2ky2z/cat.png" style="width:100%">
+        <img class="sliding" src="https://i.ibb.co/mNCj5pC/photography.png" style="width:100%">
+        <img class="sliding" src="https://i.ibb.co/XVnjfG2/ui.png" style="width:100%">
+      </div>
+
+      
+  </div>
+  
+
+     
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+  <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("sliding");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 3000); 
+      }
+      
+      </script>
+
+    <script>
+     function clickfunction() {
+      document.getElementById("search-board-id").classList.toggle("show");
+      }
+    </script>
+
+<!-------------------------------------------------->
+
+  <div class="info">
+      <div class="gp">
+        <img src="https://i.ibb.co/5sxgjwZ/thumbnail-1.png" alt="" style="width:70%">
+        <h3>GRAPHIC DESIGN</h3>
+        <button class="readmore"><p>Discover</p></button>
+      </div>
+
+      <div class="uiux">
+        <img src="https://i.ibb.co/MhRSJpz/thumbnail-3.png" alt="" style="width:70%">
+        <h3>UI/UX</h3>
+        <button class="readmore"><p>Discover</p></button>
+      </div>
+
+      <div class="photography">
+        <img src="https://i.ibb.co/Wc5cqvf/thumbnail-2.png" alt=""style="width:70%">
+        <h3>PHOTOGRAPHY</h3>
+        <button class="readmore">Discover</button>
+      </div>
+  </div>
+
+<!----------------------------------------------------------------------------------------------------->
+
+<div class="stuff">
+
+    <div class="contact">
+      <h4>CONTACT</h4>
+      <a href="#">Email us</a>
+    </div>
+
+    <div class="service-items">
+      <h4>SERVICES</h4>
+      <ul>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">UI/UX</a></li>
+          <li><a href="#">Follow us</a></li>
+      </ul>
+    </div>
+
+    <div class="company">
+      <h4>COMPANY</h4>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Legal & Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+
+    <div class="follow-us">
+        <h4>FIND US ON</h4>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-square-github"></i>&nbsp; Github</a></li>
+        <li><a href="#"><i class="fa-brands fa-square-behance"></i>&nbsp; Behance</a></li>
+        <li><a href="#"><i class="fa-brands fa-wix fa-2xs"></i>&nbsp; Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="newsletter">
+      <h4>SIGN UP FOR IMAGINATION UPDATES</h4>
+      <p>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="#" style="color: white;">Privacy Policy</a></p>
+      <input type="text" placeholder="Your email"class="placeholders" size="30px">
+      <i class=" fa fa-arrow-right"></i>
+    </div>
+    
+</div>
+<!----------------------------------------------------------------------------------->
+  <div class="language">
+    <select class="languages">
+      <option value="english">English</option>
+      <option value="belgium">Belgium</option>
+    </select>
+  </div>
+
+
+<!---------------------------------------------------------------------------------------------->
+
+<div class="copyright">
+  <h5>Imagination all rights reserved</h5>
+</div>
